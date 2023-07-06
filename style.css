@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  }
+
+h1 {
+  text-align: center;
+} 
+
+.robot:hover .eye{
+  /* transform: rotate(180deg); */
+  animation: moveeyes 10s infinite;
+}
+.robot:hover .head{
+  /* transform: rotate(180deg); */
+  animation: movehead 5s infinite;
+
+}
+.robot:hover .eye{
+  transform: rotate(180deg);
+
+}
+
+.head{
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 50px 50px 0px 0px;
+  transition: transform 5s infinite   ;
+}
+
+.head:hover{
+  background-color: black;
+}
+.eye {
+  position: relative;
+  top: 50px;
+}
+
+.eye1{
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  margin-left: 28px;
+  background-color: white;
+  display: inline-block;
+}
+.eye1:hover{
+  background-color: grey;
+  transform: scale(3);
+}
+
+.eye2{
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  margin-left: 100px;
+  background-color: white;
+  display: inline-block;
+}
+.eye2:hover{
+  background-color: gray;
+  transform: scale(3);
+}
+
+.chest{
+  width: 300px;
+  height: 203px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* .robot:hover .chest{
+  transform: scale(0.5);
+
+} */
+
+.hand1{
+  width: 40px;
+  height: 125px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: pink;
+}
+
+.robot:hover .hand1{
+  transform: rotate(50deg);
+
+}
+.hand1:hover{
+  background-color: black;
+}
+.hand2{
+  width: 40px;
+  height: 125px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: pink;
+  margin-left: 10px;
+}
+.robot:hover .hand2{
+  transform: rotate(-50deg);
+
+}
+.hand2:hover{
+  background-color: black;
+}
+
+.stomach{
+  background-color: pink;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transition: transform 5s infinite;
+}
+.robot:hover .stomach{
+  transform: rotate(360deg);
+
+}
+
+.stomach:hover{
+  background-color: black;
+}
+
+.leg{
+  width: 200px;
+  height: 400px;
+  margin: auto;
+}
+
+
+.leg1 {
+
+  background-color: pink;
+  margin-left: 50px;
+  margin-top: 80px;
+  width: 40px;
+  height: 80px;
+  border-radius: 0 0 100px 100px;
+  display: inline-block;
+}
+
+
+.robot:hover .leg1{
+  transform: rotate(60deg);
+
+}
+
+/* .leg1:hover{
+  background-color: black;
+  transform: skew(230deg);
+} */
+
+.leg2 {
+
+  background-color: pink;
+  margin-left: 30px;
+  margin-top: 110px;
+  width: 40px;
+  height: 80px;
+  border-radius: 0 0 100px 100px;
+  display: inline-block;
+
+}
+.robot:hover .leg2{
+  transform: rotate(-60deg);
+
+}
+.leg2:hover{
+  background-color: black;
+  transform: rotate(90deg);
+}
+
+@keyframes movehead {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 400px;
+  }
+  50% {
+    width: 600px;
+  }
+  75% {
+    width: 800px;
+  }
+  100% {
+    width: 1000px;
+  }
+
+}
+@keyframes moveeyes{
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: -200px;
+  }
+  50% {
+    width: 400px;
+  }
+  75% {
+    width: -400px;
+  }
+  100% {
+    width: 600px;
+  }
+
+}
